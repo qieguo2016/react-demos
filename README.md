@@ -1,7 +1,7 @@
 React Demo collections
 ------
 
-> **A React.js Demo Collections
+> **A React.js Demo Collections  
   一个 React.js 的 Demo 集**
   
 ### Summary
