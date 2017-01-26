@@ -1,0 +1,52 @@
+@import "../assets/reset.css";
+
+.view {
+    margin-top: 40px;
+}
+
+.inner, .view {
+    position: relative;
+    max-width: 800px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #009dd7;
+}
+
+.inner {
+    padding: 5px 10px;
+    margin: auto;
+}
+
+.zhihu-logo {
+    height: 30px;
+}
+
+.inner > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;
+    padding-right: 6px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.inner > a, .inner a.router-link-active {
+    font-weight: 700;
+}
+
+.inner > a:focus, .inner > a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.github {
+    float: right;
+    padding: 0;
+}

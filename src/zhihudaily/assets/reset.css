@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+body {
+    font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, WenQuanYi Micro Hei, Microsoft YaHei UI, Microsoft YaHei, sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    color: transparent;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
