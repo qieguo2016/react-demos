@@ -14,10 +14,10 @@
   "scripts": {
     "dev": "node server",
     "start": "cross-env NODE_ENV=production node server",
-    "build": "clean & npm run build:client",
+    "build": "node ./bulid/clean.js && npm run build:client",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.config.js --progress --hide-modules",
     "lint": "eslint src",
-    "clean": "node bulid/clean"
+    "clean": "node ./bulid/clean.js"
   },
   "keywords": [
     "react",

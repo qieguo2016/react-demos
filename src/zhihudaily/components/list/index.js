@@ -9,24 +9,11 @@
 // @todo 3.添加载入状态：载入中...
 
 import React, {Component} from 'react';
-import {Link} from 'react-router';
 import {Carousel} from 'antd-mobile';
+import NewLink from '../newlink';
 
-import {formatDate} from '../../util';
+import {formatDate, throttle} from '../../util';
 import './list.scss';
-
-// 节流函数
-const throttle = (func, wait, options) => {
-	let timer = null;
-	return function () {
-		if (!timer) {
-			timer = setTimeout(()=> {
-				func && func();
-				timer = null;
-			}, wait)
-		}
-	}
-}
 
 class List extends Component {
 
@@ -46,7 +33,7 @@ class List extends Component {
 				}
 				this.props.loadMore(latest.date);
 			}
-		}, 250)
+		}, 150)
 	}
 
 	componentWillMount() {
@@ -63,10 +50,10 @@ class List extends Component {
 					{
 						topStories.map((item) => {
 							return (
-								<Link to={`/zhihudaily/detail/${item.id}`} key={item.id} className="carousel-item">
+								<NewLink to={`/detail/${item.id}`} key={item.id} className="carousel-item">
 									<h1 className="zhihu-title">{item.title}</h1>
 									<div className="image-container" style={{backgroundImage: `url(${item.image})`}}></div>
-								</Link>
+								</NewLink>
 							)
 						})
 					}
@@ -82,12 +69,12 @@ class List extends Component {
 								{
 									day.stories.map((item, index) => {
 										return (
-											<Link to={`/zhihudaily/detail/${item.id}`} className="media" key={item.id}>
+											<NewLink to={`/detail/${item.id}`} className="media" key={item.id}>
 												<div className="media-body">{item.title}</div>
 												<div className="media-right">
 													<img src={item.images[0]} alt="" height="80px" width="100px"/>
 												</div>
-											</Link>
+											</NewLink>
 										)
 									})
 								}

@@ -10,3 +10,16 @@ export function formatDate (val) {
   let arr = ['日', '一', '二', '三', '四', '五', '六']
   return `${y}年${m}月${d}日 星期${arr[date.getDay()]}`
 }
+
+// 节流函数
+export const throttle = (func, wait, options) => {
+  let timer = null;
+  return function () {
+    if (!timer) {
+      timer = setTimeout(()=> {
+        func && func();
+        timer = null;
+      }, wait)
+    }
+  }
+}

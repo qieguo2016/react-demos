@@ -81,7 +81,6 @@ class Detail extends Component {
 				if (dx > 80) {
 					this.turnPage = true;
 				}
-				// this.props.router.push('/zhihudaily/')
 			}
 		}
 	}

@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react';
-import {Link} from 'react-router';
+import NewLink from './newlink';
 
 import '../assets/zhihu.css'
 import './page.css';
@@ -20,12 +20,12 @@ class Page extends Component {
 			<div>
 				<header className="header">
 					<nav className="inner">
-						<Link to={publicPath}>
-							<img src={require('../assets/logo.png')} alt="" className="zhihu-logo"/>
-						</Link >
-						<Link to={publicPath}>
-							知乎日报
-						</Link>
+						<span className="inner-brand">
+							<NewLink to='/'>
+								<img src={require('../assets/logo.png')} alt="" className="zhihu-logo"/>
+								</NewLink>
+							<NewLink to='/'>知乎日报</NewLink>
+						</span>
 						<a href="https://github.com/qieguo2016/react-demos"
 							 target="_blank"
 							 className="github">Built with React.js

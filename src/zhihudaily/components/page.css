@@ -19,15 +19,14 @@
 }
 
 .inner {
-    padding: 5px 10px;
+    padding: 0 10px 5px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.zhihu-logo {
-    height: 30px;
-}
-
-.inner > a {
+.inner > a, .inner-brand > a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -37,7 +36,7 @@
     line-height: 30px;
 }
 
-.inner > a, .inner a.router-link-active {
+.inner > a, .inner-brand > a, .inner a.router-link-active {
     font-weight: 700;
 }
 
@@ -46,7 +45,10 @@
     outline: none;
 }
 
+.zhihu-logo {
+    height: 30px;
+}
+
 .github {
-    float: right;
     padding: 0;
 }
