@@ -61,7 +61,7 @@ if (isProd) {
 	});
 }
 
-// default app
+// redirect to default app
 app.get('*', function (req, res) {
 	logger.info(`redirect request: ${req.method} ${req.url}`)
 	res.redirect(publicPath);
