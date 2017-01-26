@@ -2,7 +2,7 @@
  * @authors     : qieguo
  * @date        : 2017/1/13
  * @version     : 1.0
- * @description :
+ * @description : 服务器日志控制器
  */
 
 const env = process.env.NODE_ENV || "development";
