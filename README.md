@@ -1,12 +1,12 @@
-Vue Demo collections (Vue 2.0)
+React Demo collections
 ------
 
-> **A Vue.js Demo Collections of Vue 2.o  
-  一个 Vue2.0 的 Demo 集**
+> **A React.js Demo Collections
+  一个 React.js 的 Demo 集**
   
 ### Summary
 
-Vue2.0的demo集，所有demo的前端都基于Vue2.0、Vuex、Vue-router、axios，使用webpack 2管理模块资源，未涉及ssr，均为静态文件伺服。
+Demo集中所有项目前端都基于React、Redux、React-router、axios，使用webpack 2管理模块资源，未涉及ssr，均为静态文件伺服。
 
 后端基于express + superagent等库搭建，主要为代理转发以解决跨域、图片防盗链等权限问题。
 
@@ -44,12 +44,12 @@ npm start
 
 ### 知乎日报
 
-[Live Demo](http://demo.qieguo.me/zhihudaily/)/ [Source Code]()
+[Live Demo](http://react.qieguo.me/zhihudaily/)/ [Source Code]()
 
 ![zhihudaily](.github/zhihudaily.png)
 
 ### CNode论坛
 
-[Live Demo](http://demo.qieguo.me/cnode/) / [Source Code]()
+[Live Demo](http://react.qieguo.me/cnode/) / [Source Code]()
 
 ![CNode](.github/cnode.png)
